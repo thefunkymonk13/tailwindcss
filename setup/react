@@ -1,0 +1,24 @@
+1.) Create your project
+2.) Install Tailwindcss
+    npm install -D tailwindcss
+    npx tailwindcss init
+3.) Configure your template paths in tailwind.config.js file
+  /** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}", //maybe html files as well?
+    "//maybe public folder as well?"
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+4.) Add the tailwind directives to your index.css file
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+5.) Start Your Build Process
+  npm run start
+6.) Start using tailwind in your project
+  class="w-24..."
